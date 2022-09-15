@@ -1,0 +1,185 @@
+:root {
+
+--soft-blue:             hsl(215, 51%, 70%);
+--cyan:                  hsl(178, 100%, 50%);
+--very-dark-blue-mainBG: hsl(217, 54%, 11%);
+--very-dark-blue-cardBG: hsl(216, 50%, 16%);
+--very-dark-blue-line:   hsl(215, 32%, 27%);
+--white:                 hsl(0, 0%, 100%);
+--a-blue-violet:         hsl(228, 45%, 44%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--very-dark-blue-mainBG);
+}
+
+.main {
+    
+    display: flex;
+    flex-direction: column;
+    width: 328px;
+    height: 548px;
+    margin: 0 auto;
+    background-color: var(--very-dark-blue-cardBG);
+    border-radius: 20px;
+    padding: 26px;
+    box-shadow: 5px 5px 100px 6px #000;
+    
+}
+
+.section-img__figure {
+    
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.box {
+
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.box2 {
+
+    background-color: hsla(178, 100%, 50%, 0.473);
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.section-img__figure2 {
+
+    width: 40px;
+    margin: auto auto;
+}
+
+.section1__title {
+    
+    color: var(--white);
+    font-size: 20px;
+    margin-top: 20px;       
+}
+
+.section1__paragraph {
+
+    color: var(--soft-blue);
+    margin-top: 18px;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+.section2 {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.section2__ethprice , .section2__time {
+    display: flex;
+}
+
+.section2__img1 , .section2__img2 {
+    
+    height: 18px;
+}
+
+.section2__paragraph1 {
+
+    color: var(--cyan);
+    font-weight: 600;
+    margin: 0 6px;
+    font-size: 16px;
+}
+
+.section2__paragraph2 {
+
+    color: var(--soft-blue);
+    margin: 0 6px;
+}
+
+hr {
+    color: var(--soft-blue);
+    margin: 16px 0px;
+    background-color: var(--very-dark-blue-line);
+    height: 1px ;
+    border-color: var(--very-dark-blue-cardBG);
+    border-style: none;
+}
+
+.section3 {
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+.section3__img {
+
+    width: 32px;
+    height: 32px;
+    border: solid var(--white);
+    border-radius: 100%;
+    border-width: 1px;
+    margin-right: 18px;
+}
+
+.section3__paragraph {
+
+    color: var(--soft-blue);
+    font-weight: 100;    
+}
+
+span {
+
+    color: var(--white);
+}
+
+.box:active .box2 {
+
+    display: flex;
+}
+
+.section1__title:active {
+
+    color: var(--cyan);
+}
+
+span:active {
+
+    color: var(--cyan);
+}
+
+@media (min-width: 1024px) {
+
+    .box:hover .box2 {
+        cursor: url(./images/klipartz.com.png), pointer;
+        display: flex;
+    }
+
+    .section1__title:hover {
+        cursor: url(./images/klipartz.com.png), pointer;
+        color: var(--cyan);
+    }
+    
+    span:hover {
+        cursor: url(./images/klipartz.com.png), pointer;
+        color: var(--cyan);
+    }
+}
+
